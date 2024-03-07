@@ -43,6 +43,7 @@ func main() {
 
 	_ = MapKeys[int, string](m)
 	lst := List[int]{}
+	fmt.Println(lst)
 	lst.Push(10)
 	lst.Push(13)
 	lst.Push(23)
