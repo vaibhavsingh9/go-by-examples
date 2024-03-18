@@ -1,0 +1,3 @@
+module SCRATCH-WEB-SERVER
+
+go 1.22.0
