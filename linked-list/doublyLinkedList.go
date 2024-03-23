@@ -39,6 +39,15 @@ func (dll *DoublyLinkedList) PrintForward() {
 	}
 }
 
+func (dll *DoublyLinkedList) PrintReverse() {
+	currentNode := dll.tail
+	for currentNode != nil {
+		fmt.Printf("%d ", currentNode.data)
+		currentNode = currentNode.prev
+	}
+	fmt.Println()
+}
+
 func main() {
 	dll := DoublyLinkedList{}
 	dll.AddNode(10)
@@ -48,4 +57,7 @@ func main() {
 
 	fmt.Println("Doubly Linked List (forward):")
 	dll.PrintForward()
+
+	fmt.Println("Doubly Linked List (reverse):")
+	dll.PrintReverse()
 }
